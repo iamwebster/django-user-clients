@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="main">
+    <div class="main__header">
+        <h2 class="main__title">Клиенты пользователя: {{ request.user }}</h2>
+        <div class="main__auth">
+            <a href="{% url 'login' %}" class="main__auth__item">Login</a>
+            <a href="#" class="main__auth__item">Register</a>
+            <a href="{% url 'logout' %}" class="main__auth__item">Logout</a>
+        </div>
+    </div>
+    <div class="main__wrap">
+        <ul class="main__clients">
+            <li class="main__clients__item">Номер счета</li>
+            <li class="main__clients__item">ФИО</li>
+            <li class="main__clients__item">Дата рождения</li>
+            <li class="main__clients__item">ИНН</li>
+            <li class="main__clients__item">Статус</li>
+        </ul>
+        <hr>
+        {% for client in clients %}
+        <ul class="main__clients">
+            <li class="main__clients__item">{{ client.account_number }}</li>
+            <li class="main__clients__item">
+                {{ client.last_name }} {{ client.first_name }} {{ client.middle_name }}
+            </li>
+            <li class="main__clients__item">{{ client.date_of_birth }}</li>
+            <li class="main__clients__item">{{ client.inn }}</li>
+            <li class="main__clients__item">
+                <form action="" method="post">
+                        {{ client.status }}
+                </form>
+            </li>
+        </ul>
+        <hr>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
