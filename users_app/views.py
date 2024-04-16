@@ -32,7 +32,7 @@ def register(request):
             user = form.instance
             auth.login(request, user)
 
-            return redirect('home')
+            return redirect('main')
     else:
         form = UserRegisterForm()
 

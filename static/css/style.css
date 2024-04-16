@@ -38,6 +38,7 @@ button {
 }
 
 /* HEADER */
+
 .header__wrap {
 	display: flex;
 	align-items: center;
@@ -82,7 +83,15 @@ button {
 	text-align: center;
 }
 
-.main__clients__item_status {
+.main__clients__item:nth-child(1) {
+	width: 5%;
+}
+
+.main__clients__item:nth-child(2) {
+	width: 25%;
+}
+
+.main__clients__item:nth-child(5) {
 	width: 23%;
 }
 

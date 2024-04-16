@@ -1,0 +1,545 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-04-16T13:12:50.991Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Олегов Олег | admin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-04-16T13:13:39.935Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Иванов Иван | admin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-04-16T15:56:51.754Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "21321a",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-04-16T15:56:51.762Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "21321b",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-04-16T15:59:50.937Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Петров Петр Петрович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-04-16T16:01:16.436Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Шишкина Анна Александровна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-04-16T16:02:16.986Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "Кузьмин Давид Денисович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-04-16T16:07:43.934Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "Беляева Анастасия Максимовна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-04-16T16:10:03.932Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "DenisAdmin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add client",
+            "content_type": 7,
+            "codename": "add_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change client",
+            "content_type": 7,
+            "codename": "change_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete client",
+            "content_type": 7,
+            "codename": "delete_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view client",
+            "content_type": 7,
+            "codename": "view_client"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$x52hBIsAkQmU4ooCX9QOIP$aQxdc0XS9CUtBPN66HAVoD7oiLjocitmgGbSEuT2uHY=",
+            "last_login": "2024-04-16T17:54:29.528Z",
+            "is_superuser": true,
+            "username": "DenisAdmin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-04-16T12:47:27.399Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "users_app",
+            "model": "client"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "emvb9f453vq829zw6l6ixa63mwzs0g7u",
+        "fields": {
+            "session_data": "e30:1rwl9L:9Mx2VqIw3HGlX5w3VARMJ03SeAW862t682hfXSvD-xE",
+            "expire_date": "2024-04-30T15:55:11.801Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "s0pbud59ycr1z9dafpj7p0tirtoe5jh2",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEMjwIu3fsNZBhAqgaS0q6M_65NutDtPefcFwu4rTVsIy9hTuzMgJ1-t4j0yG0H6Y7t1jn1ti5z5LvCDzr4taf8vBzu30HFUb-1AuWEj664SRfjTAKftaQ8ZUkWi402kYgO0GDSylswABJIChLOSqvZ-wPRUTcR:1rwn0n:qgLFUhxvVtzyAI5YJOYClAj_V69SBmLQZZ8GrfE_ncs",
+            "expire_date": "2024-04-30T17:54:29.537Z"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 1,
+        "fields": {
+            "account_number": 12421,
+            "last_name": "Олегов",
+            "first_name": "Олег",
+            "middle_name": "Олегович",
+            "date_of_birth": "1999-04-16",
+            "inn": 836271834612,
+            "responsible": 1,
+            "status": "Не в работе"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 2,
+        "fields": {
+            "account_number": 84210,
+            "last_name": "Иванов",
+            "first_name": "Иван",
+            "middle_name": "Иванович",
+            "date_of_birth": "1984-11-12",
+            "inn": 821928374652,
+            "responsible": 1,
+            "status": "В работе"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 3,
+        "fields": {
+            "account_number": 63828,
+            "last_name": "Петров",
+            "first_name": "Петр",
+            "middle_name": "Петрович",
+            "date_of_birth": "1993-03-01",
+            "inn": 726152372635,
+            "responsible": 1,
+            "status": "Сделка закрыта"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 4,
+        "fields": {
+            "account_number": 31627,
+            "last_name": "Шишкина",
+            "first_name": "Анна",
+            "middle_name": "Александровна",
+            "date_of_birth": "2000-04-16",
+            "inn": 342516827354,
+            "responsible": 1,
+            "status": "Отказ"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 5,
+        "fields": {
+            "account_number": 91827,
+            "last_name": "Кузьмин",
+            "first_name": "Давид",
+            "middle_name": "Денисович",
+            "date_of_birth": "1991-11-11",
+            "inn": 928374561823,
+            "responsible": 1,
+            "status": "В работе"
+        }
+    },
+    {
+        "model": "users_app.client",
+        "pk": 6,
+        "fields": {
+            "account_number": 98731,
+            "last_name": "Беляева",
+            "first_name": "Анастасия",
+            "middle_name": "Максимовна",
+            "date_of_birth": "1999-03-02",
+            "inn": 162663827361,
+            "responsible": 1,
+            "status": "Не в работе"
+        }
+    }
+]

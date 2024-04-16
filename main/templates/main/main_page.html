@@ -9,7 +9,7 @@
         <li class="main__clients__item">ФИО</li>
         <li class="main__clients__item">Дата рождения</li>
         <li class="main__clients__item">ИНН</li>
-        <li class="main__clients__item main__clients__item_status">Статус</li>
+        <li class="main__clients__item">Статус</li>
     </ul>
     <hr>
     {% for client in clients %}
@@ -20,7 +20,7 @@
         </li>
         <li class="main__clients__item">{{ client.date_of_birth }}</li>
         <li class="main__clients__item">{{ client.inn }}</li>
-        <li class="main__clients__item main__clients__item_status">
+        <li class="main__clients__item">
             <form action="" method="post" class="status__form">
                 {% csrf_token %}
                 <input type="hidden" name="client_id" value="{{ client.id }}">
