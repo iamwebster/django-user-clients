@@ -1,10 +1,7 @@
-from django.shortcuts import render
-from .forms import UserLoginForm
+from django.shortcuts import render, redirect
+from .forms import UserLoginForm, UserRegisterForm
 from django.contrib import auth
 from django.contrib.auth import logout
-from django.contrib.auth.decorators import login_required
-from django.urls import reverse
-from django.http import HttpResponseRedirect
 
 
 
@@ -19,14 +16,30 @@ def login(request):
             if user:
                 auth.login(request, user)
                     
-                return HttpResponseRedirect(reverse('main'))
+                return redirect('main')
     else:
         form = UserLoginForm()
         
     return render(request, 'users_app/login.html', {'form': form})
 
 
+def register(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+
+            user = form.instance
+            auth.login(request, user)
+
+            return redirect('home')
+    else:
+        form = UserRegisterForm()
+
+    return render(request, 'users_app/register.html', {'form': form})
+
 
 def logout_view(request):
     logout(request)
-    return HttpResponseRedirect(reverse('main'))
+    return redirect('login')
+    

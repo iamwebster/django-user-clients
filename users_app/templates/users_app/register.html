@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="form__wrap">
+    <p class="form__title">Регистрация</p>
+
+    <form method="post" class="users__form">
+        {% csrf_token %}
+
+        <div class="form__item">
+            <label for="id_username" class="form__label">Логин</label>   
+            <input type="text" placeholder="Иван123" value="{% if form.username.value %}{{ form.username.value }}{% endif %}"  name="username" class="form__field" id="id_username" required> 
+            {% if form.username.errors %}
+            <p class="error-text">{{ form.username.errors.as_text }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form__item">  
+            <label for="id_password" class="form__label">Пароль</label>
+            <input type="password" placeholder="Пароль" name="password1" class="form__field" id="id_password" required> 
+            {% if form.password1.errors %}
+            <p class="error-text">{{ form.password1.errors.as_text }}</p>
+            {% endif %}
+        </div> 
+
+        <div class="form__item">
+            <label for="id_repassword" class="form__label">Повторите пароль</label>  
+            <input type="password" placeholder="Повторите пароль" name="password2" class="form__field" id="id_repassword" required> 
+            {% if form.password2.errors %}
+            <p class="error-text">{{ form.password2.errors.as_text }}</p>
+            {% endif %} 
+        </div>
+
+        <button class="form__button" type="submit">Зарегистрироваться</button>  
+    </form>
+</div>
+{% endblock %}
