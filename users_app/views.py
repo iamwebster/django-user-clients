@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from .forms import UserLoginForm, UserRegisterForm
 from django.contrib import auth
 from django.contrib.auth import logout
 
+from .forms import UserLoginForm, UserRegisterForm
 
 
 def login(request):

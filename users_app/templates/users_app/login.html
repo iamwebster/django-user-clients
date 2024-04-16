@@ -5,12 +5,12 @@
 <div class="form__wrap">
     <p class="form__title">Вход</p>
     {% if form.non_field_errors %}
-    <p class="error-text">{{ form.non_field_errors.as_text }}</p>
+        {% for error in form.non_field_errors %}
+        <p class="error-text">{{ error }}</p>
+        {% endfor %}
     {% endif %}
     <form method="post" class="users__form">
-        
         {% csrf_token %}
-            
         
         <div class="form__item">
             <label for="id_username" class="form__label">Логин</label>

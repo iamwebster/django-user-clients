@@ -63,6 +63,8 @@ button {
 	text-decoration: underline;
 }
 
+/* MAIN PAGE */
+
 .main__wrap {
 	display: flex;
 	flex-direction: column;
@@ -76,12 +78,30 @@ button {
 }
 
 .main__clients__item {
-	width: 20%;
+	width: 15%;
 	text-align: center;
 }
 
-select {
+.main__clients__item_status {
+	width: 23%;
+}
+
+.status__select {
 	font-size: 16px;
+	text-align: center;
+}
+
+.status__form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.status__btn {
+	font-size: 14px;
+}
+
+.status__btn:hover {
+	text-decoration: underline;
 }
 
 /* FORMS */

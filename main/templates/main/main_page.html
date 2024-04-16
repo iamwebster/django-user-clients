@@ -9,7 +9,7 @@
         <li class="main__clients__item">ФИО</li>
         <li class="main__clients__item">Дата рождения</li>
         <li class="main__clients__item">ИНН</li>
-        <li class="main__clients__item">Статус</li>
+        <li class="main__clients__item main__clients__item_status">Статус</li>
     </ul>
     <hr>
     {% for client in clients %}
@@ -20,9 +20,17 @@
         </li>
         <li class="main__clients__item">{{ client.date_of_birth }}</li>
         <li class="main__clients__item">{{ client.inn }}</li>
-        <li class="main__clients__item">
-            <form action="" method="post">
-                    {{ client.status }}
+        <li class="main__clients__item main__clients__item_status">
+            <form action="" method="post" class="status__form">
+                {% csrf_token %}
+                <input type="hidden" name="client_id" value="{{ client.id }}">
+                <select class="status__select" name="status">
+                        <option value="{{ client.status }}">{{ client.status }}</option>
+                        {% for choice in client.get_choices %}
+                            <option value="{{ choice }}">{{ choice }}</option>
+                        {% endfor %}
+                </select>
+                <button class="status__btn" type="submit">Обновить статус</button>
             </form>
         </li>
     </ul>
