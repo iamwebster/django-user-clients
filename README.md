@@ -94,7 +94,7 @@ $ python manage.py runserver
 ```
 
 Авторизация как администратор:
-* Логин - UserAdmin
+* Логин - DenisAdmin
 * Пароль - 123
 
 
